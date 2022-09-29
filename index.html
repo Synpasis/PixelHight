@@ -12,7 +12,7 @@
    Synapline
    </h1>
    <div class="container">
-   <h2>Calculator for object height in pixels:</h2>
+   <h2>Interactive camera vision calculator:</h2>
    <div class="screen-body-item">
       <div class="app">
          <div class = "one">  
@@ -57,10 +57,18 @@
          placeholder="Sensor height in millimeters"
          id="senhm" />
       </div>
+   <div class="form-group">
+         Object height in pixel:
+         <input
+         type="text"
+         class="form-control"
+         placeholder="Object height in pixels"
+         id="objpix" />
+      </div>
       <div>
          <input
          type="button"
-         value="Calculate pixel height"
+         value="Calculate"
          class="form-button"
          onclick="calculate_pixels()" />
       </div>
