@@ -34,7 +34,7 @@ const calculate_height = () => {
     let fildang = document.querySelector("#fildang").value;
     let objlen = document.querySelector("#objlen").value;
 
-    let obj_height = objlen*Math.cos(Math.PI/2-(camtilt-fildang/2)*Math.PI/180)
+    let obj_height = objlen*Math.cos(Math.PI/2-(camtilt)*Math.PI/180)  
 
     if (camtilt== ""|| fildang == "" || objlen == "" ) { document.querySelector("#showdata_height").innerHTML = "Please enter all the fields";
     } else {
@@ -61,7 +61,7 @@ const calculate_altitude = () => {
        document.querySelector(
           "#showdata_altitude"
        ).innerHTML =
-          ` Object height in meters: ${req_altitude} `;
+          ` Required altitude in meters: ${req_altitude} `;
        }
 
     };
