@@ -9,12 +9,13 @@
 <body>
    <!-- main html -->
    <h1 style="color: green">
-      Taken from https://www.scantips.com/lights/fieldofviewmath.html
+   Synapline
    </h1>
    <div class="container">
-   <h2>Simple calculator for object height in pixels:</h2>
+   <h2>Calculator for object height in pixels:</h2>
    <div class="screen-body-item">
       <div class="app">
+         <div class = "one">  
       <div class="form-group">
          <!-- option for taking the input -->
          Distance to object in meters:
@@ -59,15 +60,90 @@
       <div>
          <input
          type="button"
-         value="Calculate"
+         value="Calculate pixel height"
          class="form-button"
-         onclick="calculate()" />
+         onclick="calculate_pixels()" />
+      </div>
+      </div>
+      <div class="two">
+   <div class="form-group">
+         Camera tilt angle:
+         <input
+         type="text"
+         class="form-control"
+         placeholder="Camera tilt angle in degrees"
+         id="camtilt" />
+      </div>
+   <div class="form-group">
+         Field of view:
+         <input
+         type="text"
+         class="form-control"
+         placeholder="Field of view in degrees"
+         id="fildang" />
+      </div>
+   <div class="form-group">
+         Length of object:
+         <input
+         type="text"
+         class="form-control"
+         placeholder="Separate lengths with white space"
+         id="objlen" />
+      </div>
+      <div>
+         <input
+         type="button"
+         value="Calculate object height"
+         class="form-button"
+         onclick="calculate_height()" />
+      </div>
+      </div>
+      <div class="three">
+   <div class="form-group">
+         Distance to target:
+         <input
+         type="text"
+         class="form-control"
+         placeholder="Distance to target in meters"
+         id="disttar" />
+      </div>
+   <div class="form-group">
+         Camera tilt angle:
+         <input
+         type="text"
+         class="form-control"
+         placeholder="Camera tilt angle in degrees"
+         id="camtilt_three" />
+      </div>
+   <div class="form-group">
+         Field of view:
+         <input
+         type="text"
+         class="form-control"
+         placeholder="Field of view in degrees"
+         id="fildang_three" />
+      </div>
+      <div>
+         <input
+         type="button"
+         value="Calculate the required altitude"
+         class="form-button"
+         onclick="calculate_altitude()" />
+      </div>
       </div>
       </div>
    </div>
    <!-- for showing the result-->
+<div class="four">
    <div class="form-group showdata">
-      <p id="showdata"></p>
+      <p id="showdata_pixels"></p>
+   </div>
+   <div class="form-group showdata">
+      <p id="showdata_height"></p>
+   </div> 
+   <div class="form-group showdata">
+      <p id="showdata_altitude"></p>
+   </div>
    </div>
    </div>
    <!--adding external javascript file-->

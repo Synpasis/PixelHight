@@ -16,6 +16,22 @@
     padding-top: 10px;
     padding-bottom: 10px;
  }
+ .one{
+   background-color:limegreen;
+   float: left;
+ }
+ .two{
+   background-color:rgb(50, 125, 205);
+   float: left;
+ }
+ .three{
+   background-color:rgb(202, 50, 205);
+   float: left;
+ }
+ .four{
+   background-color:rgba(49, 44, 49, 0.443);
+   float: left;
+ }
  #form-group {
     padding: 20px;
  }
